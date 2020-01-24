@@ -19,7 +19,7 @@ requirements:
     - pip
     - python
   run:
-    - mo-future >=2.48.19205
+    - mo-future >=3.31.20024
     - pyparsing ==2.3.1
     - python
 
