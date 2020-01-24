@@ -26,6 +26,10 @@ requirements:
 test:
   imports:
     - moz_sql_parser
+  requires:
+   - pip
+  commands:
+   - pip check
 
 about:
   home: "https://github.com/mozilla/moz-sql-parser"
