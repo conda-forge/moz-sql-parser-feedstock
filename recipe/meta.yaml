@@ -1,5 +1,5 @@
 {% set name = "moz-sql-parser" %}
-{% set version = "3.18.19324" %}
+{% set version = "3.31.20024" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: d04c09ff749b91819dac2ebaa68018b1ff56f8641211bcc8bc70d7134f1e049a
+  sha256: 2bacf8d0e1dd00a58d009d8b519e284546a7ecef2b7024c20a591b050a71de3b
 
 build:
   number: 0
@@ -19,13 +19,17 @@ requirements:
     - pip
     - python
   run:
-    - mo-future >=2.48.19205
+    - mo-future >=3.31.20024
     - pyparsing ==2.3.1
     - python
 
 test:
   imports:
     - moz_sql_parser
+  requires:
+   - pip
+  commands:
+   - pip check
 
 about:
   home: "https://github.com/mozilla/moz-sql-parser"
