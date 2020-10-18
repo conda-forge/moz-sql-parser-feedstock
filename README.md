@@ -5,11 +5,9 @@ Home: https://github.com/mozilla/moz-sql-parser
 
 Package license: MPL-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/moz-sql-parser-feedstock/blob/master/LICENSE.txt)
 
 Summary: Extract Parse Tree from SQL
-
-
 
 Current build status
 ====================
