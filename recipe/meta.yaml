@@ -16,12 +16,13 @@ build:
 
 requirements:
   host:
+    - python >=2.7
     - pip
-    - python >=2.7
   run:
-    - mo-future >=3.31.20024
-    - pyparsing ==2.3.1
     - python >=2.7
+    - mo-dots >=3.93.20259
+    - mo-future >=3.89.20246
+    - mo-logs >=3.118.20293
 
 test:
   imports:
@@ -32,7 +33,7 @@ test:
     - pip check
 
 about:
-  home: https://github.com/mozilla/moz-sql-parser
+  home: https://github.com/klahnakoski/moz-sql-parser
   license: MPL-2.0
   license_family: MOZILLA
   license_file: LICENSE
