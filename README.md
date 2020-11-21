@@ -1,7 +1,7 @@
 About moz-sql-parser
 ====================
 
-Home: https://github.com/mozilla/moz-sql-parser
+Home: https://github.com/klahnakoski/moz-sql-parser
 
 Package license: MPL-2.0
 
