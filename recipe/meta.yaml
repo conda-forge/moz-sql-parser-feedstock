@@ -1,5 +1,5 @@
 {% set name = "moz-sql-parser" %}
-{% set version = "4.1.20329" %}
+{% set version = "4.5.20343" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f1c23b2db401ed38db3a2e4040b8ce7e347fc3012d78652d33501fe3a13ed407
+  sha256: f47d4d9c9d8318f03f882e4d65510a8fb3e86e4200b7f36c2703c8b8f3e0c572
 
 build:
   number: 0
@@ -20,9 +20,9 @@ requirements:
     - pip
   run:
     - python >=2.7
-    - mo-dots 3.149.20327
+    - mo-dots 4.2.20340
     - mo-future 3.147.20327
-    - mo-logs 3.151.20327
+    - mo-logs 4.3.20340
 
 test:
   imports:
