@@ -1,5 +1,5 @@
 {% set name = "moz-sql-parser" %}
-{% set version = "4.5.20343" %}
+{% set version = "4.7.21002" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f47d4d9c9d8318f03f882e4d65510a8fb3e86e4200b7f36c2703c8b8f3e0c572
+  sha256: 8f748a83ca89b5ba8b22330f733c6170d41a689f60f3766644b5a32b4bb55a24
 
 build:
   number: 0
