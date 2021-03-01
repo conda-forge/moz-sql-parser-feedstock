@@ -20,9 +20,9 @@ requirements:
     - pip
   run:
     - python >=2.7
-    - mo-dots 4.2.20340
+    - mo-dots 4.19.21059
     - mo-future 3.147.20327
-    - mo-logs 4.3.20340
+    - mo-logs 4.20.21059
 
 test:
   imports:
