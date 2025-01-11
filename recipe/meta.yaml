@@ -6,20 +6,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: b3d37cc8ff118d86009aa12646791549537ec0ae8ac312efd4641289c8eee080
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: '{{ PYTHON }} -m pip install . -vv '
 
 requirements:
   host:
-    - python >=2.7
+    - python {{ python_min }}
     - pip
   run:
-    - python >=2.7
+    - python >={{ python_min }}
     - mo-dots 4.22.21108
     - mo-future 3.147.20327
     - mo-logs 4.23.21108
@@ -29,6 +29,7 @@ test:
     - moz_sql_parser
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
